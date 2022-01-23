@@ -1,16 +1,44 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0A1690;
+  --black: #17171B;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--black);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.ve-container {
+  width: 940px;
+  margin: 0 auto;
 }
 
-* {
-  box-sizing: border-box;
+header.main-top {
+  padding: 20px 0;
 }
+
+.ve-main-nav {
+  position: relative;
+}
+
+.ve-main-nav::before {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 103px;
+  height: 2px;
+  left: -115px;
+  top: 22px;
+}
+
+.ve-main-nav a {
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black)
+}
+
