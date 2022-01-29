@@ -1,0 +1,71 @@
+.sliderContainer {
+    position: relative;
+    margin-top: 22px;
+
+    :global {
+        .portfolio-image {
+            flex: 0 0 373px;
+            margin-right: 50px;
+        }
+
+        .portfolio-content {
+            span {
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: -0.02em;
+                margin-bottom: -5px;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                letter-spacing: -0.02em;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        .slick-dots {
+            width: auto;
+            right: 0;
+            bottom: -60px;
+
+            li {
+                width: 8px;
+                margin-right: 15px;
+
+                button {
+                    width: 8px;
+                    height: 8px;
+                    background: transparent;
+                    border: 1px solid #fff;
+                    border-radius: 8px;
+                    text-indent: -9999px;
+                    overflow: hidden;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sliderNav {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    left: 0;
+
+    button {
+        display: block;
+        padding: 10px;
+    }
+}

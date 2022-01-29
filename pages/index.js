@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import SliderPortfolio from '../components/SliderPortfolio'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -14,6 +15,10 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"></link>
       </Head>
 
+          <div className={styles.bigLogoSide}>
+            <Image src={`/big-vivevio.svg`} width={143} height={777} />
+          </div>
+          
           <div className="ve-container">
             <header className='flex justify-between main-top'>
                 <div className="ve-logo">
@@ -55,6 +60,13 @@ export default function Home() {
                   </section>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className={styles.portfolioContainer}>
+            <div className="ve-container">
+                <h2 className='section-title'>Projects That I Have Worked On <span /></h2>
+                <SliderPortfolio />
             </div>
           </div>
     </div>

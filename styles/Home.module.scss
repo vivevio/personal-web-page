@@ -91,3 +91,65 @@
     font-size: 14px;
     letter-spacing: -0.05em;
 }
+
+.bigLogoSide {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.portfolioContainer {
+    margin-top: 60px;
+
+    :global {
+        .ve-container {
+            background-color: var(--primary-color);
+            padding: 58px 0 98px;
+            z-index: 1;
+            color: #fff;
+            margin-bottom: 40px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 80px;
+                background-color: var(--primary-color);
+                height: 100%;
+                top: 0;
+                left: -80px;
+                height: 100%;
+                z-index: 0;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: calc(100vw - 940px);
+                background-color: var(--primary-color);
+                height: 100%;
+                top: 0;
+                left: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            h2.section-title {
+                position: relative;
+                font-size: 18px;
+                font-weight: 900;
+                letter-spacing: -0.02em;
+                display: inline-block;
+
+                span {
+                    position: absolute;
+                    content: '';
+                    background-color: #fff;
+                    width: 25px;
+                    height: 1px;
+                    left: calc(100% + 2px);
+                    top: 18px;
+                }
+            }
+        }
+    }
+}
