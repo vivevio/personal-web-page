@@ -24,26 +24,3 @@ body {
 header.main-top {
   padding: 20px 0;
 }
-
-.ve-main-nav {
-  position: relative;
-}
-
-.ve-main-nav::before {
-  content: '';
-  position: absolute;
-  background-color: var(--primary-color);
-  width: 103px;
-  height: 2px;
-  left: -115px;
-  top: 22px;
-}
-
-.ve-main-nav a {
-  display: block;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--black)
-}
-

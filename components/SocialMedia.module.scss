@@ -1,0 +1,24 @@
+.listSocialMedia {
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+
+    :global {
+        li {
+            padding-right: 15px;
+            cursor: pointer;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            .line {
+                width: 100px;
+                height: 2px;
+                background: #17171B;
+                position: relative;
+                bottom: -5px;
+            }
+        }
+    }
+}

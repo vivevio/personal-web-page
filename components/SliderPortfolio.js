@@ -11,19 +11,19 @@ const _PORTFOLIOS = [
         image: '/portfolio-images/PortfolioVirtualClassroom.webp',
         corporate: 'Natieva, 2018',
         title: 'Virtual Classroom',
-        description: `Membuat aplikasi kelas virtual yang digunakan untuk platform Natieva dan Smartpi. Dipakai untuk membantu pembelajaran secara online. Saya bertanggung jawab mulai dari design interface, arsitektur aplikasi, sampai dengan bagian front end development.`
+        description: `Build a virtual class application that is used for Natieva and Smartpi platforms. Used to help online learning. I am responsible start from interface design, application architecture until the front-end development.`
     },
     {
         id: 2,
         image: '/portfolio-images/PortfolioBirru.webp',
-        corporate: 'Natieva, 2019',
+        corporate: 'Birru, 2019',
         title: 'Birru Landing Page',
         description: `Create a landing page for Birru application. In this project, I am responsible from designing the UI until front-end development proccess.`
     },
     {
         id: 3,
         image: '/portfolio-images/PortfolioSmartpi.webp',
-        corporate: 'Natieva, 2020',
+        corporate: 'Smartpi, 2020',
         title: 'SmartPi Mobile App',
         description: `Mobile app built with React Native. This application aims to purchase learning packages, create schedules, and send chats to teachers. In this project, I am responsible for building applications in React Native.`
     },

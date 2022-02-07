@@ -1,0 +1,34 @@
+.MainNav {
+    position: relative;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+
+    
+    :global {
+        .line {
+          position: absolute;
+          background-color: var(--primary-color);
+          width: 103px;
+          height: 2px;
+          left: -115px;
+          top: 23px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--black);
+            transition: all 0.3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+  
+  
+  
