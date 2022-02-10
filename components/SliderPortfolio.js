@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Slider from "react-slick";
 import Image from 'next/image'
+import { motion, useAnimation } from "framer-motion"
 
 import styles from './SliderPortfolio.module.scss'
 
@@ -41,10 +42,12 @@ const SliderPortfolio = () => {
     const settings = {
         dots: true,
         infinite: false,
-        speed: 500,
+        speed: 640,
         slidesToShow: 1,
         arrows: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        cssEase: 'cubic-bezier(0.65,0.05,0.36,1)',
+        useCSS: true
     };
 
     const slider = useRef(null)
@@ -57,6 +60,9 @@ const SliderPortfolio = () => {
         slider.current.slickPrev()
     }
 
+    const animateOnPress = {
+        scale: 0.95
+    }
 
     return (
         <div className={styles.sliderContainer}>
@@ -83,12 +89,12 @@ const SliderPortfolio = () => {
             </Slider>
 
             <div className={styles.sliderNav}>
-                <button className="button-prev">
-                    <Image src={`/icon-prev.svg`} onClick={prevSlide} width={20} height={31} />
-                </button>
-                <button className="button-next" onClick={nextSlide}>
-                    <Image src={`/icon-next.svg`} width={20} height={31} />
-                </button>
+                <motion.button whileTap={animateOnPress} className="button-prev">
+                    <Image src={`/icons/arrow-left.svg`} onClick={prevSlide} width={24} height={24} />
+                </motion.button>
+                <motion.button whileTap={animateOnPress} className="button-next" onClick={nextSlide}>
+                    <Image src={`/icons/arrow-right.svg`} width={24} height={24} />
+                </motion.button>
             </div>
         </div>
     )
