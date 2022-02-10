@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
+import AboutMe from '../components/AboutMe'
 import MainNav from '../components/MainNav'
 import SliderPortfolio from '../components/SliderPortfolio'
 import SocialMedia from '../components/SocialMedia'
+
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -88,6 +91,8 @@ export default function Home() {
             </div>
           </div>
 
+          <AboutMe />
+          
           <footer className={styles.footerSection} id="social-media">
             <div className="ve-container flex justify-between items-end">
               <div>
