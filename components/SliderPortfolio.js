@@ -23,7 +23,7 @@ const _PORTFOLIOS = [
     },
     {
         id: 3,
-        image: '/portfolio-images/PortfolioSmartpi.webp',
+        image: '/portfolio-images/PortfolioSmartPi.webp',
         corporate: 'Smartpi, 2020',
         title: 'SmartPi Mobile App',
         description: `Mobile app built with React Native. This application aims to purchase learning packages, create schedules, and send chats to teachers. In this project, I am responsible for building applications in React Native.`
