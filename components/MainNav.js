@@ -1,21 +1,23 @@
+import { Link } from 'react-scroll'
 import { motion, useAnimation } from "framer-motion"
+
 import styles from './MainNav.module.scss'
 
 const _MENUS = [
     {
         id: 1,
         text: 'work',
-        link: '#work'
+        link: 'work'
     },
     {
         id: 2,
         text: 'about',
-        link: '#about'
+        link: 'about'
     },
     {
         id: 3,
         text: 'social media',
-        link: '#social-media'
+        link: 'social-media'
     }
 ];
 
@@ -48,7 +50,7 @@ const MainNav = () => {
                         onHoverStart={onHoverAnimationStart}
                         onHoverEnd={onHoverAnimationEnd}
                     >
-                        <a href={row.link}>{row.text}</a>
+                        <Link to={row.link} smooth={true} duration={300}>{row.text}</Link>
                     </motion.div>
                 )
             }) }
