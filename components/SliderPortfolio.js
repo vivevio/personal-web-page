@@ -73,7 +73,7 @@ const SliderPortfolio = () => {
                             <div className="slide-item" key={`slider-${row.id}`}>
                                 <div className="flex justify-between">
                                     <div className="portfolio-image">
-                                        <Image src={row.image} width={373} height={243} />
+                                        <Image src={row.image} width={373} height={243} alt={`${row.title} - Vive Portfolio`} />
                                     </div>
                                     <div className="portfolio-content flex flex-col justify-center">
                                         <span className="portfolio-corporate-date">{row.corporate}</span>
@@ -88,12 +88,12 @@ const SliderPortfolio = () => {
                 }
             </Slider>
 
-            <div className={styles.sliderNav}>
+            <div className={`${styles.sliderNav} portfiolio-nav-container`}>
                 <motion.button whileTap={animateOnPress} className="button-prev">
-                    <Image src={`/icons/arrow-left.svg`} onClick={prevSlide} width={24} height={24} />
+                    <Image src={`/icons/arrow-left.svg`} alt="prev-icon" onClick={prevSlide} width={24} height={24} />
                 </motion.button>
                 <motion.button whileTap={animateOnPress} className="button-next" onClick={nextSlide}>
-                    <Image src={`/icons/arrow-right.svg`} width={24} height={24} />
+                    <Image src={`/icons/arrow-right.svg`} alt="next-icon" width={24} height={24} />
                 </motion.button>
             </div>
         </div>

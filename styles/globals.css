@@ -23,4 +23,117 @@ body {
 
 header.main-top {
   padding: 20px 0;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ve-container {
+      width: 98vw;
+  }
+
+  #work .slide-item {
+    padding: 0 35px;
+  }
+
+  #work .section-title {
+    margin-left: 35px;
+  }
+
+  #work .portfiolio-nav-container {
+    right: 35px;
+  }
+
+  #work .slick-dots {
+    left: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 680px) {
+  .ve-container {
+    width: 100vw;
+  }
+
+  header.main-top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header.main-top nav {
+    display: none;
+  }
+
+  .big-logo-slide {
+    width: 50px;
+  }
+
+  .ve-container .intro-container {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .ve-container .intro-content {
+    flex-direction: column;
+  }
+
+  .ve-container .intro-content .right {
+    margin-top: 40px;
+  }
+
+  #work .slide-item > div {
+    flex-direction: column;
+  }
+
+  #work .slide-item .portfolio-image {
+    width: 100%;
+    flex: 1;
+  }
+
+  #work .slide-item .portfolio-content {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  #work .portfiolio-nav-container {
+    right: 35px;
+  }
+
+  #about > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about > div .left {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  #about > div .right {
+    padding: 0 30px;
+  }
+
+  #about > div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  footer > div.ve-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  footer > div > div:first-child {
+    width: 100%;
+    padding: 0 20px 30px;
+  }
+  
+  footer > div > div:last-child {
+    padding: 0 20px;  
+  }
+
+  footer > div ul li:first-child {
+    display: none;
+  }
 }

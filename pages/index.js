@@ -39,24 +39,24 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"></link>
       </Head>
 
-          <div className={styles.bigLogoSide}>
-            <Image src={`/big-vivevio.svg`} width={143} height={777} />
+          <div className={`${styles.bigLogoSide} big-logo-slide`}>
+            <Image src={`/big-vivevio.svg`} width={143} height={777} alt="logo vive vio" />
           </div>
           
           <div className="ve-container">
             <header className='flex justify-between main-top'>
                 <div className="ve-logo">
-                  <Image src={`/logo-text.svg`} width={76} height={23} />
+                  <Image src={`/logo-text.svg`} width={76} height={23} alt="big text" />
                 </div>
                 
                 <MainNav />
             </header>
 
-            <div className={styles.introContainer}>
-              <div className={styles.introAvatar}>
-                  <Image src={`/vive-avatar.webp`} width={124} height={124} />
+            <div className={`${styles.introContainer} intro-container`}>
+              <div className={`${styles.introAvatar} avatar`}>
+                  <Image src={`/vive-avatar.webp`} width={124} height={124} alt="avatar vivevio" />
               </div>
-              <div className={styles.introContent}>
+              <div className={`${styles.introContent} intro-content`}>
                 <div className='left'>
                   <p>Hi There,</p>
                   <h1>I am Vive <span>Vio</span></h1>

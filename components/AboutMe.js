@@ -91,7 +91,7 @@ const AboutMe = () => {
                 </div>
                 <div className='right'>
                     <span className='small-title'>well, hi there</span>
-                    <h3>Nice Meet <span>You</span></h3>
+                    <h3>Nice to Meet <span>You</span></h3>
                     <p>
                     I was born in 95s. Started loving programming since late 2011. Visual Studio Code and Figma was my favorite tools before Sublime Text and Sketch. an Introvert. Sometimes I love to put my thought into writing but sometimes I just let them talk in my head.
                     </p>
