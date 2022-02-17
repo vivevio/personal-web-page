@@ -14,6 +14,7 @@ export default function Home() {
       <Head>
         <title>Vive Vio Permana</title>
         <meta name="description" content="Hi, I am Front End Developer from Indonesia" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
