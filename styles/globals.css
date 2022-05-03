@@ -26,6 +26,10 @@ header.main-top {
   align-items: center;
 }
 
+.work-left .tech-stack span {
+  @apply px-1 tracking-tight;
+}
+
 @media only screen and (max-width: 1024px) {
   .ve-container {
       width: 98vw;

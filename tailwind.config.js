@@ -8,7 +8,12 @@ module.exports = {
       'sans': 'Inter',
       'body': 'Inter'
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0A1690',
+        base: '#17171B'
+      }
+    },
   },
   plugins: [],
 }

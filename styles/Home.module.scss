@@ -1,6 +1,5 @@
 .introContainer {
-    margin-top: 64px;
-    margin-bottom: 40px;
+    @apply flex flex-col justify-center;
 }
 
 .introAvatar {
@@ -96,6 +95,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 .portfolioContainer {
